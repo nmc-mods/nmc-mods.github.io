@@ -3,22 +3,41 @@ body {
     margin: 0;
 }
 
-header {
-    background: url("/assets/background.jpg");
+header.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    
 }
 
 h1 {
     margin: 0;
+    font-size: 4em;
 }
 
-header > h1 {
-    position: relative;
-    top: calc(50vh - 1em);
+header.banner > h1 {
+    color: white;
     text-align: center;
+}
+
+header.image-description {
+    padding: 24px;
+    width: calc(960px - 48px);
+    height: calc(480px - 48px);
+    margin: auto;
+}
+
+header.page-11 {
+    background-color: #eeddee;
 }
