@@ -79,14 +79,14 @@ div.gallery {
     width: calc(1280px - 24px);
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
 div.gallery > article {
     padding: 12px;
     width: calc(360px - 24px);
-    height: calc(720px - 24px);
+    height: calc(550px - 24px);
     display: flex;
     flex-direction: column;
 }
@@ -108,6 +108,10 @@ div.gallery > article > button {
     
 }
 
+div.gallery > article > cite {
+    text-align: center;
+}
+
 button {
     display: inline-block;
     border-radius: 6px;
@@ -121,4 +125,20 @@ button {
 
 button:hover {
     background-color: #ff4080;
+}
+
+a {
+    color: #ff40ff;
+    transition: color 0.25s;
+}
+
+a:hover {
+    color: #ff4080;
+}
+
+footer {
+    padding: 2em 0 2em 0;
+    background-color: #221122;
+    color: white;
+    text-align: center;
 }
