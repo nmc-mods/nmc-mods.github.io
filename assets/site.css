@@ -3,21 +3,26 @@ body {
     margin: 0;
 }
 
-header {
+div.page-10 {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
+}
+
+div.page-10 > header {
+    width: calc(720px - 24px);
+    height: calc(100vh - 24px);
+    margin: auto;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    justify-content: center;
+    
     flex-flow: column;
+    padding: 12px;
     
 }
 
@@ -26,9 +31,35 @@ h1 {
     font-size: 4em;
 }
 
-header > h1 {
+div.page-10 > header > h1 {
     color: white;
     text-align: center;
+    margin: auto;
+}
+
+div.page-10 > header > ul > li.logo {
+    float: left;
+}
+
+div.page-10 > header > ul > li.logo > img {
+    width: calc(1em + 24px);
+    height: calc(1em + 24px);
+}
+
+div.page-10 > header > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+div.page-10 > header > ul > li {
+    float: right;
+    margin: 12px;
+}
+
+div.page-10 > header > ul > li > a {
+    color: white;
+    text-decoration: none;
 }
 
 div.image-description {
