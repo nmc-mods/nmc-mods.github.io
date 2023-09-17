@@ -33,9 +33,30 @@ header.banner > h1 {
 
 header.image-description {
     padding: 24px;
-    width: calc(960px - 48px);
-    height: calc(480px - 48px);
+    width: calc(720px - 48px);
+    height: calc(360px - 48px);
     margin: auto;
+    display: flex;
+}
+
+header.image-description > img {
+    width: calc(360px - 48px);
+    height: calc(360px - 48px);
+    padding-right: 12px;
+}
+
+header.image-description > div {
+    padding-left: 12px;
+    width: calc(360px - 48px);
+    height: calc(360px - 48px);
+}
+
+header.image-description > div > h2 {
+    padding-bottom: 12px;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
 }
 
 header.page-11 {
