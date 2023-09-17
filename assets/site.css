@@ -41,7 +41,7 @@ div.page-10 > header > ul > li.logo {
     float: left;
 }
 
-div.page-10 > header > ul > li.logo > img {
+div.page-10 > header > ul > li.logo > a > img {
     width: calc(1em + 24px);
     height: calc(1em + 24px);
 }
