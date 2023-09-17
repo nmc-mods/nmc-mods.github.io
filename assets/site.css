@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-header.banner {
+header {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/background.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -26,12 +26,12 @@ h1 {
     font-size: 4em;
 }
 
-header.banner > h1 {
+header > h1 {
     color: white;
     text-align: center;
 }
 
-header.image-description {
+div.image-description {
     padding: 24px;
     width: calc(720px - 48px);
     height: calc(360px - 48px);
@@ -39,26 +39,86 @@ header.image-description {
     display: flex;
 }
 
-header.image-description > img {
+div.image-description > img {
     width: calc(360px - 48px);
     height: calc(360px - 48px);
     padding-right: 12px;
 }
 
-header.image-description > div {
+div.image-description > article {
     padding-left: 12px;
     width: calc(360px - 48px);
     height: calc(360px - 48px);
 }
 
-header.image-description > div > h2 {
+div.image-description > article > h2 {
     padding-bottom: 12px;
 }
 
-p, h1, h2, h3 {
+p, h1, h2, h3, h4 {
     margin: 0;
 }
 
-header.page-11 {
+div.page-11 {
     background-color: #eeddee;
+}
+
+div.page-12 {
+    background-color: #eeddee;
+}
+
+h4.banner {
+    background-color: #221122;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+div.gallery {
+    padding: 12px;
+    width: calc(1280px - 24px);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.gallery > article {
+    padding: 12px;
+    width: calc(360px - 24px);
+    height: calc(720px - 24px);
+    display: flex;
+    flex-direction: column;
+}
+
+div.gallery > article > img {
+    padding-bottom: 12px;
+    width: calc(360px - 24px);
+    height: calc(360px - 24px);
+}
+
+div.gallery > article > h2 {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+div.gallery > article > button {
+    width: calc(360px - 24px);
+    margin-top: auto;
+    
+}
+
+button {
+    display: inline-block;
+    border-radius: 6px;
+    background-color: #ff40ff;
+    padding: 12px;
+    border: none;
+    font-family: poppins;
+    color: white;
+    transition: background-color 0.25s
+}
+
+button:hover {
+    background-color: #ff4080;
 }
