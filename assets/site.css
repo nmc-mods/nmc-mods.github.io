@@ -37,27 +37,38 @@ div.page-10 > header > h1 {
     margin: auto;
 }
 
-div.page-10 > header > ul > li.logo {
+div.navbar {
+    position: -webkit-sticky;
+    height: calc(48px);
+    top: 0;
+    position: sticky;
+    background-color: #221122;
+}
+
+div.navbar > ul > li.logo {
     float: left;
+    margin: 12px;
 }
 
-div.page-10 > header > ul > li.logo > a > img {
-    width: calc(1em + 24px);
-    height: calc(1em + 24px);
+div.navbar > ul > li.logo > a > img {
+    width: calc(48px - 24px);
+    height: calc(48 - 24px);
+    display: block;
 }
 
-div.page-10 > header > ul {
+div.navbar > ul {
     list-style-type: none;
-    margin: 0;
+    width: 720px;
+    margin: auto;
     padding: 0;
 }
 
-div.page-10 > header > ul > li {
+div.navbar > ul > li {
     float: right;
     margin: 12px;
 }
 
-div.page-10 > header > ul > li > a {
+div.navbar > ul > li > a {
     color: white;
     text-decoration: none;
 }
@@ -73,7 +84,8 @@ div.image-description {
 div.image-description > img {
     width: calc(360px - 48px);
     height: calc(360px - 48px);
-    padding-right: 12px;
+    margin-right: 12px;
+    border-radius: 6px;
 }
 
 div.image-description > article {
@@ -123,9 +135,10 @@ div.gallery > article {
 }
 
 div.gallery > article > img {
-    padding-bottom: 12px;
+    margin-bottom: 12px;
     width: calc(360px - 24px);
     height: calc(360px - 24px);
+    border-radius: 6px;
 }
 
 div.gallery > article > h2 {
