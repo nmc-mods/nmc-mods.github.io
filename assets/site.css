@@ -98,8 +98,9 @@ div.image-description > article > h2 {
     padding-bottom: 12px;
 }
 
-p, h1, h2, h3, h4 {
+p, h1, h2, h3, h4, div {
     margin: 0;
+    color: #221122;
 }
 
 div.page-11 {
@@ -178,6 +179,27 @@ a {
 
 a:hover {
     color: #ff4080;
+}
+
+div.divider-background {
+    background-color: #eeddee;
+}
+
+h4.divider {
+    background-color: #eeddee;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    width: calc(720px - 24px);
+    margin: auto;
+}
+
+h4.divider::before, h4.divider::after {
+    flex: 1;
+    content: "";
+    padding: 1px;
+    background-color: #221122;
+    margin: 12px;
 }
 
 footer {
