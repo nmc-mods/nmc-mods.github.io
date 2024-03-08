@@ -3,33 +3,9 @@ div.full-image {
     margin: 0 auto calc(24px + (96px - 12px) / 2);
 }
 
-div.mod-banner {
-    background-color: #808080;
-}
-
-div.mod-icon {
-    position: relative;
-    background-color: #808080;
-    background-size: cover;
-    width: 96px;
-    height: 96px;
-    border: 6px solid #eeddee;
-    border-radius: 6px;
-    top: calc((360px - 48px) - ((96px + 12px) / 2));
-    left: 32px;
-}
-
-div.page-21 > article.bio {
-    width: calc(720px - 48px);
+div.page-21 {
     margin: auto;
-}
-
-div.page-21 > article.bio > h1.name {
-    font-size: 2em;
-}
-
-div.page-21 > article.bio > p {
-    padding: 12px 0;
+    width: 720px;
 }
 
 div.page-22 > div.downloads-list {
